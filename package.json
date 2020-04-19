@@ -1,0 +1,28 @@
+{
+  "name": "gh-glitch-hook",
+  "version": "0.0.1",
+  "description": "Push on Github repo and deploy to Glitch 🐟 project.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "deploy": "git add . && git commit -m'deploy to glitch 🐟' && git push origin master"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-cmd": "^3.0.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/gh-glitch-hook"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "github",
+    "webhook",
+    "express"
+  ]
+}
